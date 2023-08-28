@@ -40,7 +40,7 @@ Algoritmo BuclePara_3
 		//Leo las Info de los alumnos y saco nota final
 		Escribir "Ingrese el nombre del alumno, por favor"
 		Leer NombreAlumno
-		Escribir "Ingrese nota del trabajo tráctico integrador; por favor"
+		Escribir "Ingrese nota del trabajo práctico integrador; por favor"
 		Leer NotaTPInt
 		Escribir "Ingrese nota de la exposición; por favor"
 		Leer NotaExp
@@ -56,7 +56,7 @@ Algoritmo BuclePara_3
 		SiNo
 			Escribir NombreAlumno " ha aprobado"
 		Fin Si
-		//sumo los alumnos que tienen motas mayores a 7,5 en el integrador
+		//sumo los alumnos que tienen notas mayores a 7,5 en el integrador
 		Si NotaTPInt > 7.5
 			CantAlumIntMay75 <- CantAlumIntMay75 + 1
 		FinSi
