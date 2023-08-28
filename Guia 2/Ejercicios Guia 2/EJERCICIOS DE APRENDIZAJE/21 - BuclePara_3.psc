@@ -28,6 +28,8 @@ Algoritmo BuclePara_3
 	Definir ProAlumIntMay75 Como Real //Porcentaje de alumnos con la nota del TP integrador mayor a 7,5
 	CantAlumIntMay75 <- 0
 	ProAlumIntMay75 <- 0
+	Definir NotaExpMax Como Real //* La mayor nota obtenida en las exposiciones.
+	NotaExpMax <- 0
 	Definir AlumParcApro Como Entero //Total de estudiantes que obtuvieron en el Parcial entre 4.0 y 7.5.
 	AlumParcApro <- 0
 	
@@ -60,6 +62,10 @@ Algoritmo BuclePara_3
 		Si NotaTPInt > 7.5
 			CantAlumIntMay75 <- CantAlumIntMay75 + 1
 		FinSi
+		// valido la nota mayor de la exosición
+		si NotaExpMax < NotaExp
+			NotaExpMax <- NotaExp
+		FinSi
 		//sumo los alumnos que obtuvieron en el Parcial entre 4.0 y 7.5
 		Si NotaParc >= 4 Y NotaParc <= 7.5
 			AlumParcApro <- AlumParcApro + 1
@@ -82,6 +88,8 @@ Algoritmo BuclePara_3
 		Escribir "No hay alumnos que tengan el Trabajo practico Intergrador con nota mayor a 7,5"
 	Fin Si
 	//Tercer informe
+		Escribir "La mayor nota obtenida en las exposiciones es: " NotaExpMax
+	//Cuarto informe
 	Si AlumParcApro > 0 Entonces
 		Escribir "La cantidad de alumnos alumnos que obtuvieron en el Parcial entre 4.0 y 7.5 es: " AlumParcApro
 	SiNo
