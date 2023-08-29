@@ -13,15 +13,15 @@ Algoritmo BuclesAnidados_1
 	Leer lado
 	Para EjeY <- 1 Hasta lado  
 		Para Ejex <- 1 Hasta lado 
-		Si EjeY = 1 o EjeY = lado 
+			Si EjeY = 1 o EjeY = lado //dibujo primera y ultima linea
 				Escribir Sin Saltar "*  "
 			SiNo
-				Si EjeX = 1 o EjeX = lado 
+				Si EjeX = 1 o EjeX = lado //imprimo primer y ultimo asterisco de la linea
 					Escribir Sin Saltar  "*  "
 				SiNo
 					Escribir Sin Saltar "   "
 				FinSi
-		FinSi
+			FinSi
 		FinPara
 		Escribir ""	
 FinPara
