@@ -9,7 +9,6 @@
 //	El programa pedirá la cantidad de alumnos que tiene el docente y en cada alumno
 //	pedirá las 3 notas y calculará todos informes claves que requiere el docente.
 //	Nota: para trabajar este ejercicio de manera prolija, ir probando cada inciso que pide el ejercicio.
-
 Algoritmo BuclePara_3
 	///Variables
 	//Variables de control
@@ -32,11 +31,9 @@ Algoritmo BuclePara_3
 	NotaExpMax <- 0
 	Definir AlumParcApro Como Entero //Total de estudiantes que obtuvieron en el Parcial entre 4.0 y 7.5.
 	AlumParcApro <- 0
-	
 	///Primer paso saber cuantos alumnos hay
 	Escribir "Ingrese total de alumnos de la clase, por favor"
 	Leer alumnos
-	
 	///Segundo paso tomar los datos
 	Para ca <- 1 hasta alumnos Con Paso 1 Hacer
 		//Leo las Info de los alumnos y saco nota final
@@ -71,7 +68,6 @@ Algoritmo BuclePara_3
 			AlumParcApro <- AlumParcApro + 1
 		FinSi
 	FinPara
-	
 	///Tercer paso generar informes
 	//Primer informe
 	Si AlumRepro > 0 Entonces
@@ -91,8 +87,8 @@ Algoritmo BuclePara_3
 		Escribir "La mayor nota obtenida en las exposiciones es: " NotaExpMax
 	//Cuarto informe
 	Si AlumParcApro > 0 Entonces
-		Escribir "La cantidad de alumnos alumnos que obtuvieron en el Parcial entre 4.0 y 7.5 es: " AlumParcApro
+		Escribir "La cantidad de alumnos que obtuvieron en el Parcial entre 4.0 y 7.5 es: " AlumParcApro
 	SiNo
-		Escribir "No hay alumnos que alumnos alumnos que obtuvieron en el Parcial entre 4.0 y 7.5"
+		Escribir "No hay alumnos que alumnos que obtuvieron en el Parcial entre 4.0 y 7.5"
 	Fin Si
 FinAlgoritmo
