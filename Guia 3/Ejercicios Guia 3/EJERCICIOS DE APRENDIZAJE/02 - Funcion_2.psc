@@ -14,5 +14,5 @@ FinAlgoritmo
 ///Funciones
 Funcion parImpar <- ParOImpar(Num1)
 	Definir parImpar Como Entero
-	parImpar <- Num1 mod 2
+	parImpar <- Num1 % 2
 Fin Funcion
