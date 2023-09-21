@@ -18,7 +18,7 @@ Algoritmo Arreglos_6
 	n<-20
 	i<-0
 	Definir LargoFrase Como Entero
-	LargoFrase<-21
+	LargoFrase<-21 //Defino LargoFrase con 21 para que entre en el bucle
 	///Defino los arrays
 	Definir ArrayU, f Como Caracter
 	f<-""

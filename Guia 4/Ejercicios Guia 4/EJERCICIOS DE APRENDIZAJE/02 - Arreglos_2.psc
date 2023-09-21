@@ -7,10 +7,9 @@ Algoritmo Arreglos_2
 	resta<-0
 	multiplicacion<-1
 	Para i<-0 Hasta 9 Hacer
-		Escribir "Ingrese in numero, por favor"
+		Escribir "Ingrese un numero, por favor"
 		Leer Array10(i)
 	FinPara
-	Escribir "Los números  ingresados son: " Sin Saltar
 	Para i <- 0 Hasta 9 Hacer
 		suma <- suma + Array10(i)
 		resta <- resta - Array10(i)

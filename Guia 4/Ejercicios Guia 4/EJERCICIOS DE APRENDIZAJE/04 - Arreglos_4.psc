@@ -21,7 +21,7 @@ Algoritmo Arreglos_4
 		Dimension ArrayA(n)
 		Dimension ArrayB(n)
 		Dimension ArrayC(n)
-		definir ArrayA,ArrayB,ArrayC Como Real
+		Definir ArrayA,ArrayB,ArrayC Como Real
 		///Inicio el menu
 		eleccion <-" "
 		i<-0
@@ -53,7 +53,6 @@ Algoritmo Arreglos_4
 					Escribir "Ha salido del programa"
 					eleccion<-"F"
 			Fin Segun
-			i<-i+1
 		FinMientras
 FinAlgoritmo
 
@@ -76,7 +75,7 @@ FinSubProceso
 SubProceso CargoArray(Array,i,n)
 	Escribir "--------------------"
 	Para i<-0 Hasta n-1 Con Paso 1 Hacer
-		Array(i) = azar( 100)
+		Array(i) = aleatorio( -100,100)
 		Escribir Array(i)
 	Fin Para
 	Escribir "--------------------"
